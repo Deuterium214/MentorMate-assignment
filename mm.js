@@ -6,14 +6,13 @@ function paintMentorMate(N) {
     if (N < 2 || N > 10000 || N % 2 == 0) {
         return false;
     }
-    // s - 1,  k - 2, f -3
+  
     let index1 = N;
     let index2 = N;
     let index3 = N;
     let arr1 = [];
     let arr2 = [];
 
-    // fill arr1
     for (let i = 0; i < 5; i++) {
         if (i % 2 === 0) {
             arr1.push("-".repeat(N));
@@ -32,7 +31,7 @@ function paintMentorMate(N) {
         }
         console.log();
 
-        // s1
+      
         if (i <= (N - 1) / 2) {
             arr1[0] = repeat("-", index1 - 1);
             arr1[1] = repeat("*", index2 + 2);
@@ -43,7 +42,7 @@ function paintMentorMate(N) {
             index2 = index2 + 2;
             index3 = index3 - 2;
 
-            // fill s2
+          2
             if (i + 1 > (N - 1) / 2) {
                 for (let d = 0; d < 7; d++) {
                     if (d === 2 || d === 4) {
@@ -60,7 +59,7 @@ function paintMentorMate(N) {
             }
         }
 
-        // s2
+     
         if (i > (N - 1) / 2) {
             arr2[0] = repeat("-", index1 - 1);
             arr2[1] = repeat("*", N);
