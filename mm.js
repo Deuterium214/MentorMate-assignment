@@ -42,7 +42,7 @@ function paintMentorMate(N) {
             index2 = index2 + 2;
             index3 = index3 - 2;
 
-          2
+          
             if (i + 1 > (N - 1) / 2) {
                 for (let d = 0; d < 7; d++) {
                     if (d === 2 || d === 4) {
